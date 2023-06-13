@@ -1,346 +1,726 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!--
+Author: http://webthemez.com
+Note: Donate to remove backlink/credits in the footer(webthemez.com)--
+Any help: webthemez@gmail.com
+Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
+-->
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>My Portfolio</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
-    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <script src="js/custom.js"></script>
-
-    <link rel="shortcut icon" href="#">
-    <link rel="apple-touch-icon" href="#">
-    <link rel="apple-touch-icon" sizes="72x72" href="#">
-    <link rel="apple-touch-icon" sizes="114x114" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>My Travel - Single page website</title>
+    <meta name="description" content="Traveller">
+    <meta name="author" content="WebThemez">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+    <!-- Owl Carousel Assets -->
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body id="top" class="homepage">
-    <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i> +1 123-456-7890</p></div>
-                    </div>
-                    <div class="col-sm-6 col-xs-8">
-                        <div class="social">
-                            <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
-
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a href="#" class="navbar-brand scroll-top logo"><b>Traveller</b></a>
                 </div>
-
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#top">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contactUs">Contact</a></li>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
+                        <li><a href="#packages" class="scroll-link">Packages</a></li>
+                        <li><a href="#priceTable" class="scroll-link">Price</a></li>
+                        <li><a href="#portfolio" class="scroll-link">Gallery</a></li>
+                        <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
                     </ul>
                 </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-
-    </header><!--/header-->
-
-    <section id="main-slider">
-        <div class="owl-carousel">
-            <div class="item" style="background-image: url(images/slider/bg1.jpg);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content">
-                                    <h2>Awesome Responsive HTML5/CSS3 Template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </header>
+    <!--/.header-->
+    <div id="#top"></div>
+    <section id="home">
+        <div class="banner-container">
+         <!--   <img src="images/banner-bg.jpg" alt="banner" />-->
+            <div class="container banner-content">
+                <div id="da-slider" class="da-slider">
+                    <div class="da-slide">
+                        <h2>Travel Plans</h2>
+                        <p>Get your plans right away.. enjoy!!!</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"></div>
                     </div>
-                </div>
-            </div><!--/.item-->
-
-            <div class="item" style="background-image: url(images/slider/bg2.jpg);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content">
-                                    <h2>Simple and Clean Design</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="da-slide">
+                        <h2>Amazing Tours</h2>
+                        <p>Travel you remember for life long!!</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"></div>
                     </div>
-                </div>
-            </div><!--/.item-->
-
-            <div class="item" style="background-image: url(images/slider/bg3.jpg);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content">
-                                    <h2>Clean and Elegant Theme</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-        </div><!--/.owl-carousel-->
-    </section><!--/#main-slider-->
-
-    <section id="services" class="service-item">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-desktop"></i>
-                    </div>
-                    <div class="service-desc">
-                        <h3>Responsive Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-cogs"></i>
-                    </div>
-                    <div class="service-desc">
-                        <h3>Easy to Customize</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <div class="service-icon">
-                        <i class="fa fa-line-chart"></i>
-                    </div>
-                    <div class="service-desc">
-                        <h3>SEO Friendly</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#services-->
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="heading text-center">
-                        <h2>Portfolio</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque at tellus felis. Donec nulla velit, vulputate ac ultrices non, facilisis eu lacus. </p>
-                    </div>
-                    <div class="isotope-container">
-                        <div class="col-sm-4 isotopeItem photography">
-                            <div class="portfolio-item">
-                                <img src="images/portfolio/img1.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-Get It!">
-                                        <a href="images/portfolio/img1.jpg" class="fancybox">
-                                            <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 isotopeItem print">
-                            <div class="portfolio-item">
-                                <img src="images/portfolio/img2.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-Get It!">
-                                        <a href="images/portfolio/img2.jpg" class="fancybox">
-                                            <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 isotopeItem print">
-                            <div class="portfolio-item">
-                                <img src="images/portfolio/img3.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-Get It!">
-                                        <a href="images/portfolio/img3.jpg" class="fancybox">
-                                            <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 isotopeItem photography">
-                            <div class="portfolio-item">
-                                <img src="images/portfolio/img4.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-Get It!">
-                                        <a href="images/portfolio/img4.jpg" class="fancybox">
-                                            <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 isotopeItem print">
-                            <div class="portfolio-item">
-                                <img src="images/portfolio/img5.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-Get It!">
-                                        <a href="images/portfolio/img5.jpg" class="fancybox">
-                                            <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 isotopeItem print">
-                            <div class="portfolio-item">
-                                <img src="images/portfolio/img6.jpg" alt="" />
-                                <div class="portfolio-desc align-center">
-                                    <div class="folio-Get It!">
-                                        <a href="images/portfolio/img6.jpg" class="fancybox">
-                                            <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
-
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="heading text-center">
-                        <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque at tellus felis. Donec nulla velit, vulputate ac ultrices non, facilisis eu lacus. </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img class="img-responsive" src="images/about.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <h3>Who We Are</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque at tellus felis. Donec nulla velit, vulputate ac ultrices non, facilisis eu lacus. </p>
-                            <h3>Why Choose Us?</h3>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-->
-    </section><!--/#about-->
-
-    <section id="contactUs">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="heading text-center">
-                        <h2>Contact Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque at tellus felis. Donec nulla velit, vulputate ac ultrices non, facilisis eu lacus. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-6">
-                    <address>
-                        <h3>Head Office</h3>
-                        <p>123, New Lenox<br>
-                            Chicago, IL 60606<br>
-                            United States</p>
-                        <p>Phone: +1 123-456-7890<br>
-                            Email: info@example.com</p>
-                    </address>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                    <h3>Email Us</h3>
-                    <form id="main-contact-form" name="contact-form" method="post" action="#">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Name" required="required">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email" required="required">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" class="form-control" rows="8" placeholder="Message" required="required"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div><!--/.container-->
-    </section><!--/#contactUs-->
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <p>&copy; 2023 Your Company. All Rights Reserved.</p>
+                    <div class="da-slide">
+                        <h2>Best Travel Travel</h2>
+                        <p>Get best deals at our place</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"></div>
+                    </div> 
+				<!--  <nav class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </nav> -->
                 </div>
             </div>
         </div>
-    </footer><!--/#footer-->
+    </section>
+    <section id="introText">
+        <div class="container">
+            <div class="text-center">
+            <h1>My Travel Gives You a Great Holiday Package</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. </p>
+            </div>
+        </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
+    </section>
+	<section id="service" class="home-section page-section section appear clearfix secPad bg-gray">
+		<div class="text-center">
+		<div class="container">
+		<div class="heading text-center">
+                <!-- Heading -->
+                <h2>What we Offer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        <div class="row animatedParent">
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-tag fa-2x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5>Tour Plan</h5>
+						<div class="divider-header"></div>
+						<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rquia.<br/>
+						</p>
+						<a href="#" class="btn btn-skin">Learn more</a>
+					</div>
+                </div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-plane fa-2x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>Travel Plan</h5>
+						<div class="divider-header"></div>
+						<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rquia.<br/>
+						</p>
+						<a href="#" class="btn btn-skin">Learn more</a>
+					</div>
+                </div>
+            </div>
+			<div class="col-xs-6 col-sm-4 col-md-4">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-heart fa-2x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>Stay Plan</h5>
+						<div class="divider-header"></div>
+						<p>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rquia.<br/>
+						</p>
+						<a href="#" class="btn btn-skin">Learn more</a>
+					</div>
+                </div>
+            </div>
 
+        </div>		
+		</div>
+		</div>
+	</section>
+    <!--About-->
+    <section id="aboutUs" class="secPad">
+    	<div class="container">
+
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>About Us</h2>
+                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+            </div>
+            <div class="row">
+            <div class="col-md-4">
+                <img src="images/1.jpg" alt="" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-md-8">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasiest, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
+						   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasiest, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p> 
+                    </div>
+                </div>
+            
+         	</div>   
+    </section>
+       
+
+   <!--Package-->
+    <section id="packages" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Most Popular Packages</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-1.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="col-md-3 col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-2.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="col-md-3 col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-3.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="col-md-3 col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-4.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+            </div>    
+        	 <div class="row">
+                <div class="col-md-3 col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-5.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="col-md-3  col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-6.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="col-md-3  col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-7.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"> Get It!</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+                <div class="col-md-3  col-sm-6">
+                            <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                <p style="text-align:center;">
+                                    <img src="images/pic/pic-8.jpg" class="img-responsive" alt="">
+                                </p>
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h3>Place Name</h3>
+                                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                                        <a class=" btn btn-default" href="#"><i class="fa fa-chevron-circle-right"></i> Get It!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                </div>
+            </div>    
+         </div>
+    </section>
+    <!--Quote-->
+    <section id="quote" class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+				<h2>"The World is a book, and those who do not travel read only a page."
+</h2><h3>-Saint Augustine</h3>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+    
+    <!--Price Table-->
+    <section id="priceTable" class="secPad white">
+    	 <div class="container">
+         <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Our Price List</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+         	<div class="row"> 
+            <div class="col-sm-3">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h3>Basic</h3>
+                </div>
+                <div class="panel-body">
+                  <h3 class="panel-title price">$9<span class="price-cents">99</span><span class="price-month">mo.</span></h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">5 Projects</li>
+                  <li class="list-group-item">5 GB of Storage</li>
+                  <li class="list-group-item">Up to 100 Users</li>
+                  <li class="list-group-item">10 GB Bandwidth</li>
+                  <li class="list-group-item">Security Suite</li>
+                  <li class="list-group-item"><a class="btn btn-default">Sign Up Now!</a></li>
+                </ul>
+              </div>          
+            </div>
+            <div class="col-sm-3">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h3>Plus</h3>
+                </div>
+                <div class="panel-body">
+                  <h3 class="panel-title price">$19<span class="price-cents">99</span><span class="price-month">mo.</span></h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">10 Projects</li>
+                  <li class="list-group-item">10 GB of Storage</li>
+                  <li class="list-group-item">Up to 250 Users</li>
+                  <li class="list-group-item">25 GB Bandwidth</li>
+                  <li class="list-group-item">Security Suite</li>
+                  <li class="list-group-item"><a class="btn btn-default">Sign Up Now!</a></li>
+                </ul>
+              </div>          
+            </div>
+            <div class="col-sm-3">
+              <div class="panel panel-danger text-center">
+                <div class="panel-heading">
+                  <h3>Premium</h3>
+                </div>
+                <div class="panel-body">
+                  <h3 class="panel-title price">$29<span class="price-cents">99</span><span class="price-month">mo.</span></h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">Unlimited</li>
+                  <li class="list-group-item">50 GB of Storage</li>
+                  <li class="list-group-item">Up to 1000 Users</li>
+                  <li class="list-group-item">100 GB Bandwidth</li>
+                  <li class="list-group-item">Security Suite</li>
+                  <li class="list-group-item"><a class="btn btn-primary">Sign Up Now!</a></li>
+                </ul>
+              </div>          
+            </div>
+            <div class="col-sm-3">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h3>Ultimate</h3>
+                </div>
+                <div class="panel-body">
+                  <h3 class="panel-title price">$49<span class="price-cents">99</span><span class="price-month">mo.</span></h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">Unlimited</li>
+                  <li class="list-group-item">150 GB of Storage</li>
+                  <li class="list-group-item">Unlimited</li>
+                  <li class="list-group-item">500 GB Bandwidth</li>
+                  <li class="list-group-item">Security Suite</li>
+                  <li class="list-group-item"><a class="btn btn-default">Sign Up Now!</a></li>
+                </ul>
+              </div>          
+            </div>
+     
+          </div>
+         </div>      
+    </section>
+    
+
+  <section id="testimonial" class="page-section section appear clearfix secPad">
+    <div class="container">
+  <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#quote-carousel" data-slide-to="1" class=""></li>
+                        <li data-target="#quote-carousel" data-slide-to="2" class=""></li>
+                    </ol>
+
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="images/person_1.png" style="width: 100px; height: 100px;">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="images/person_2.png" style="width: 100px; height: 100px;">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="img-circle" src="images/person_3.png" style="width: 100px; height: 100px;">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+         
+  </div>
+  </section>
+   <!--Portfolio-->
+    <section id="portfolio" class="page-section section appear clearfix secPad">
+        <div class="container">
+
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Gallery</h2>
+                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+            </div>
+
+            <div class="row">            
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+                            <article class="col-sm-4 isotopeItem webdesign">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img1.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img1.jpg" class="fancybox">                                                
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img2.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img2.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img3.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img3.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem print">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img4.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img4.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img5.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img5.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem webdesign">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img6.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img6.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem print">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img7.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img7.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img8.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img8.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem print">
+                                <div class="portfolio-item">
+                                    <img src="images/portfolio/img9.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-Get It!">
+                                            <a href="images/portfolio/img9.jpg" class="fancybox">
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+	<!--Contact -->
+    <section id="contactUs" class="page-section secPad">
+        <div class="container">
+
+            <div class="row">
+                <div class="heading text-center">
+                    <!-- Heading -->
+                    <h2>Let's Keep In Touch!</h2>
+                    <p>Thank you for visiting out my profile. If you would like to get into contact with me, please fill out the form below.</p>
+                </div>
+            </div>
+
+            <div class="row mrgn30">
+
+                <form method="post" action="" id="contactfrm" role="form">
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="comments">Comments</label>
+                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+                        </div>
+                        <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
+                        <div class="result"></div>
+                    </div>
+                </form>
+                <div class="col-sm-4">
+                    <h4>Address:</h4>
+                    <address>
+                        WebThemez Company<br>
+                        134 Stilla. Tae., 414515<br>
+                        Leorislon, SA 02434-34534 USA
+                        <br>
+                    </address>
+                    <h4>Phone:</h4>
+                    <address>
+                        12345-49589-2<br>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <footer>
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+    </footer>
+    <!--/.page-section-->
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    Copyright 2015 | All Rights Reserved  -- Template by <a href="http://webThemez.com">WebThemez.com</a>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+    </section>
+    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+
+    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+    <script src="js/modernizr-latest.js"></script>
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="js/jquery.nav.js" type="text/javascript"></script>
+    <script src="js/jquery.cslider.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
-
 </html>
