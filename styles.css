@@ -1,13 +1,23 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
   }
-  
+  .package {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .package h3 {
+    margin: 0;
+  }
+  .package p {
+    margin: 2px 0;
+  }
+
   header {
+
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -121,10 +131,22 @@ body {
   #packages {
     background-color: #333232;
     padding: 50px;
-    text-align: center;
+    text-align: CENTER;
     margin-bottom: -20px;
   }
   
+  #packages DIV {
+    background-color: #333232;
+    text-align: LEFT;
+    line-height: 0.8;
+  }
+
+  #packages DIV h1 {
+    background-color: #333232;
+    text-align: center;
+    line-height: 0.8;
+  }
+
   #packages h2 {
     font-size: 32px;
     font-weight: bold;
@@ -209,7 +231,7 @@ body {
     margin-right: 2rem;
     min-width: 200px;
     flex-shrink: 0;
-    transform-origin: center center;  /* Add transform-origin for proper rotation */
+    transform-origin: center center; /* Add transform-origin for proper rotation */
   }
   
   .member img {
