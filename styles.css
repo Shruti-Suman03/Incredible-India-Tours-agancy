@@ -239,7 +239,7 @@ body {
     font-size: 1rem;
   }
   
-/*   @keyframes carousel {
+  @keyframes carousel {
     0% {
       transform: translateX(0);
     }
@@ -267,7 +267,7 @@ body {
     100% {
       transform: translateX(0);
     }
-  } */
+  }
   
   /* Contact Us Section Styles */
   #contact {
