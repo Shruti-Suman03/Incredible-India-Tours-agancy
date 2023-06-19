@@ -209,7 +209,7 @@ body {
     margin-right: 2rem;
     min-width: 200px;
     flex-shrink: 0;
-    transform-origin: center center; /* Add transform-origin for proper rotation */
+/*     transform-origin: center center; /* Add transform-origin for proper rotation */ */
   }
   
   .member img {
